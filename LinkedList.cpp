@@ -40,3 +40,16 @@ void Insert(int x) {
     temp->next = NULL;          // set the next pointer of temp to NULL
     head = temp;                // update the head pointer to point to the newly created node temp
 }
+
+void Print() {
+    Node* temp = head;      // Assign value of the global var head to temp
+    printf("List is: ");
+
+    while (temp != NULL)
+    {
+        printf(" %d", temp -> data);
+        temp = temp -> next;
+    }
+    printf("\n");
+    
+}
